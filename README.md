@@ -1,10 +1,10 @@
 # Taste Test
+I’m building an app, “Taste Test”, that produces a list of popular cocktails, along with their ingredients, with the purpose of serving as study guide for new bartenders and servers. I’ve worked in the service industry for about 10 years, and I remember how difficult it was to memorize all the ingredients of the bar menu when I first started as a bartender. I hope this app can help present that information in an intuitive and efficient manner.
 
 <hr style="border: 3px solid black">
 
 ### Table of Contents
 
-* [Description](#description)
 * [Getting Started/Installation](#getting-started)
 * [Wireframe](#wireframe)
 * [Technolgies Used](#technologies-used)
@@ -14,11 +14,7 @@
 
 <hr style="border: 3px solid black">
 
-## Description
-I’m building an app, “Taste Test”,  that produces a list of popular cocktails, along with their ingredients, with the purpose of serving as study guide for new bartenders and servers. I’ve worked in the service industry for about 10 years, and I remember how difficult it was to memorize all the ingredients of the bar menu when I first started as a bartender. I hope this app can help present that information in an intuitive and efficient manner.
-
 ## Getting Started / Installation
-
 
 ## Wireframe
 ![Wireframe](./public/images/Wireframe.png)
@@ -44,7 +40,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Acknowledgments
 
 
-
+- - - 
 
 
 ## Available Scripts
