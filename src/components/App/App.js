@@ -1,17 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
-import CocktailList from '../../pages/CocktailList/CocktailList';
 import NavBar from '../NavBar/NavBar'
+import CocktailList from '../../pages/CocktailList/CocktailList';
+import CocktailIngredients from '../../pages/CocktailIngredients/CocktailIngredients';
 
 export default function App() {
-  const [cocktail, setCocktail] = useState(['margarita', 'tequila sunrise']);
-
   return (
     <>
       <NavBar />
-      <CocktailList cocktail={cocktail} key={cocktail} />
+      <main>
+        <Routes>
+          <Route path='/cocktails' element={<CocktailList />} />
+          <Route path='/cocktails/:id' element={<CocktailIngredients />} />
+        </Routes>
+      </main>
     </>
   );
 }
