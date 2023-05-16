@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-// import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function CocktailList(props) {
 const [ cocktails, setCocktails] = useState([]);
@@ -20,10 +20,17 @@ useEffect(() => {
 
   return (
     // TODO: RENDER LIST OF COCKTAILS HERE
-    <div className="cocktails-list">
-        {cocktails.map(c => (
-            <h2 key={c.idDrink}>{c.strDrink}</h2>
-        ))}
-    </div>
+      <div className="cocktails-list">
+        <h2>Cocktail List</h2>
+        
+        {/* {cocktails.map((cocktail) => {
+
+          // return (
+          //   <Link to={`/cocktails/${idDrink}`} key={idDrink}>
+          //     {strDrink}
+          //   </Link>
+          // );
+        })} */}
+      </div>
   )
 }
