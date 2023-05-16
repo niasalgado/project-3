@@ -11,7 +11,7 @@ export default function App() {
   return (
     <>
       <NavBar />
-      {/* <CocktailList cocktail={cocktail} key={cocktail}/> */}
+      <CocktailList cocktail={cocktail} key={cocktail} />
     </>
   );
 }

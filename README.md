@@ -1,5 +1,5 @@
 # Taste Test
-I’m building an app, “Taste Test”, that produces a list of popular cocktails, along with their ingredients, with the purpose of serving as study guide for new bartenders and servers. I’ve worked in the service industry for about 10 years, and I remember how difficult it was to memorize all the ingredients of the bar menu when I first started as a bartender. I hope this app can help present that information in an intuitive and efficient manner.
+I’m building an app, “Taste Test”, that produces a list of popular cocktails, along with their ingredients, with the purpose of serving as study guide for new bartenders and servers. I’ve worked in the service industry for about 10 years, and I remember how difficult it was to memorize all the ingredients of the bar menu. I hope this app can help present that information in an intuitive and efficient manner.
 
 <hr style="border: 3px solid black">
 
@@ -18,6 +18,7 @@ I’m building an app, “Taste Test”, that produces a list of popular cocktai
 
 ## Wireframe
 ![Wireframe](./public/images/Wireframe.png)
+![Wireframe](./public/images/ComponentHierarchy.png)
 
 ## Site Preview
 
