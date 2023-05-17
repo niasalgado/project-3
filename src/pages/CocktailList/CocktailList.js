@@ -8,8 +8,6 @@ const fetchCocktails = async () => {
   try {
     const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=');
     const data = await response.json();
-    console.log(data);
-    console.log(data.drinks[0]);
 
     setCocktailList(data.drinks);
   } catch (error) {
@@ -23,20 +21,18 @@ useEffect(() => {
 }, []);
 
   return (
-      <div className="cocktails-list">
+      <div className='cocktails-list'>
          <NavBar text={' '}/>
         <h2>Cocktail List</h2>
         
         {cocktailList.map((cocktail) => {
-
           let { idDrink, strDrink } = cocktail;
           const id = {idDrink}
-          console.log(id)
 
           return (
-            <p><Link to={`/cocktails/${idDrink}`} key={idDrink} id={id}>
-              {strDrink}
-            </Link>
+            <p> <Link to={`/cocktails/${idDrink}`} key={idDrink} id={id}>
+                  {strDrink}
+                </Link>
             </p>
           );
         })}
