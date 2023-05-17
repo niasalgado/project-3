@@ -20,7 +20,8 @@ export default function CocktailIngredients() {
     }
   };
 
-  console.log("cocktail: " , cocktail)
+  const [showIngredients, setShowIngredients] = useState(true);
+  const handleClick = () => setShowIngredients(!showIngredients);
   
   useEffect(() => {
     fetchCocktail();
@@ -32,21 +33,31 @@ export default function CocktailIngredients() {
       <>
       <NavBar text={'Back to Cocktail Index'}/>
       <h2>{cocktail.strDrink}</h2>
-      
-      <ul>
-        <li>Glass: {cocktail.strGlass}</li>
-        <li>{cocktail.strMeasure1} {cocktail.strIngredient1}</li>
-        <li>{cocktail.strMeasure2} {cocktail.strIngredient2}</li>
-        <li>{cocktail.strMeasure3} {cocktail.strIngredient3}</li>
-      </ul>
 
-      <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+      <button onClick={handleClick}>
+        {showIngredients ? 'Hide' : 'Show'}
+      </button>
+      
+      {showIngredients && 
+      <>
+         <ul>
+          <li>Glass: {cocktail.strGlass}</li>
+          <li>{cocktail.strMeasure1} {cocktail.strIngredient1}</li>
+          <li>{cocktail.strMeasure2} {cocktail.strIngredient2}</li>
+          <li>{cocktail.strMeasure3} {cocktail.strIngredient3}</li>
+        </ul>
+
+        <p>Instructions: {cocktail.strInstructions}</p>
+      </>
+      }
+
+     <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
       </>
     )
   };
 
   const loading = () => {
-    return <h1>Loading...</h1> ;
+    return <h1>Loading...</h1>
   };
 
   return <section>{cocktail ? loaded() : loading()}</section> ;
