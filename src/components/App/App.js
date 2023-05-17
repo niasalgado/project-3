@@ -10,7 +10,6 @@ import CocktailIngredients from '../../pages/CocktailIngredients/CocktailIngredi
 export default function App() {
   return (
     <>
-      <NavBar />
       <main>
         <Routes>
           <Route path='/' element={<HomePage />}/>

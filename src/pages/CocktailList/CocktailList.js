@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import NavBar from '../../components/NavBar/NavBar';
 
 export default function CocktailList(props) {
 const [ cocktailList, setCocktailList] = useState([]);
@@ -23,6 +24,7 @@ useEffect(() => {
 
   return (
       <div className="cocktails-list">
+         <NavBar text={' '}/>
         <h2>Cocktail List</h2>
         
         {cocktailList.map((cocktail) => {

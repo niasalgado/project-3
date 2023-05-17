@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
+
+import NavBar from '../../components/NavBar/NavBar';
 
 export default function CocktailIngredients() {
 
@@ -28,13 +30,17 @@ export default function CocktailIngredients() {
   const loaded = () => {
     return (
       <>
-      Name: {cocktail.strDrink}
+      <NavBar text={'Back to Cocktail Index'}/>
+      <h2>{cocktail.strDrink}</h2>
+      
       <ul>
         <li>Glass: {cocktail.strGlass}</li>
         <li>{cocktail.strMeasure1} {cocktail.strIngredient1}</li>
         <li>{cocktail.strMeasure2} {cocktail.strIngredient2}</li>
         <li>{cocktail.strMeasure3} {cocktail.strIngredient3}</li>
       </ul>
+
+      <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
       </>
     )
   };
