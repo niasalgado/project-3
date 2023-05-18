@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from '../../components/NavBar/NavBar';
+import './CocktailList.css'
 
 export default function CocktailList(props) {
 const [ cocktailList, setCocktailList] = useState([]);
