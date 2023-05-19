@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
 * {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -9,6 +11,7 @@ h2 {
     font-weight: 600;
     font-size: 2em;
     padding-top: 15vh;
+    text-align: center;
 }
 .container {
     display: flex;
@@ -29,4 +32,5 @@ h2 {
     text-align: center;
 }
 .cocktail-list-container a {
+    font-size: 1em;
 }

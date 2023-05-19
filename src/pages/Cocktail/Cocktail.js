@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+
 import NavBar from '../../components/NavBar/NavBar';
+import './Cocktail.css'
 
 export default function CocktailIngredients() {
   const { id } = useParams()
@@ -30,25 +32,31 @@ export default function CocktailIngredients() {
       <>
         <NavBar text={'Back to Cocktail Index'}/>
         <h2>{cocktail.strDrink}</h2>
-
-        <button onClick={handleClick}>
-          {showIngredients ? 'Hide' : 'Show'}
-        </button>
         
-        {showIngredients && 
-          <>
-            <ul>
-              <li>Glass: {cocktail.strGlass}</li>
-              <li>{cocktail.strMeasure1} {cocktail.strIngredient1}</li>
-              <li>{cocktail.strMeasure2} {cocktail.strIngredient2}</li>
-              <li>{cocktail.strMeasure3} {cocktail.strIngredient3}</li>
-            </ul>
+        <div className='ingredients-container'>
+          <div className='ingredients'>
+            <button className='handle-btn' onClick={handleClick}>
+              {showIngredients ? 'Hide' : 'Show'}
+            </button>
 
-            <p>Instructions: {cocktail.strInstructions}</p>
-          </>
-        }
+            {showIngredients && 
+              <>
+                <ul className='ingrUl'>
+                  <li>Glass: {cocktail.strGlass}</li>
+                  <li>{cocktail.strMeasure1} {cocktail.strIngredient1}</li>
+                  <li>{cocktail.strMeasure2} {cocktail.strIngredient2}</li>
+                  <li>{cocktail.strMeasure3} {cocktail.strIngredient3}</li>
+                </ul>
 
-        <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+                <p>Instructions: {cocktail.strInstructions}</p>
+              </>
+            }
+          </div>
+
+          <div className='ingrImg'>
+            <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+          </div>
+        </div>
       </>
     )
   };

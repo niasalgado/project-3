@@ -6,8 +6,6 @@ export default function HomePage() {
     <div id='home-container'>
         <h1>Taste Test</h1>
         <Link to='/cocktails' id='index-link'>Cocktail Index</Link>
-        
-        {/* // TODO: Render an inviting, styled Home Page with nav links to cocktail list and a feature(random) cocktail */}
     </div>
     )
 }

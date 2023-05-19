@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import NavBar from '../../components/NavBar/NavBar';
 import './CocktailList.css'
 
@@ -27,7 +28,6 @@ useEffect(() => {
         <h2>Cocktail List</h2>
 
         <div className="cocktail-list-container">
-
           {cocktailList.map((cocktail) => {
             let { idDrink, strDrink } = cocktail;
             const id = {idDrink}
@@ -38,8 +38,8 @@ useEffect(() => {
                     </Link>
                 </p>
             )
-        })}</div>
-
+          })}
+        </div>
       </div>
   )
 }
