@@ -1,20 +1,31 @@
 # Taste Test
-I’m building an app, “Taste Test”, that produces a list of popular cocktails, along with their ingredients, with the purpose of serving as study guide for new bartenders and servers. I’ve worked in the service industry for about 10 years, and I remember how difficult it was to memorize all the ingredients of the bar menu. I hope this app can help present that information in an intuitive and efficient manner.
+Taste Test is an app that produces a list of popular cocktails, and allows you to view the measurements, ingredients, and glassware of any cocktail from the populated list. This app is created with the intention of serving as study guide for new bartenders, servers, or anyone joining the service industry.
+I’ve worked in the service industry for over 10 years, and I remember how difficult it was in the beginning to memorize all the ingredients of the bar menu. I hope this app can help present that information in an intuitive and efficient way!
 
 <hr style='border: 3px solid black'>
 
 ### Table of Contents
 
-* [Getting Started/Installation](#getting-started)
-* [Wireframe](#wireframe)
-* [Technolgies Used](#technologies-used)
-* [Coding Challenges](#coding-challenges)
-* [Next Steps](#next-steps)
-* [Contributions](#contributions)
+- [Getting Started/Installation](#getting-started)
+- [Wireframe](#wireframe)
+- [Technolgies Used](#technologies-used)
+- [Coding Challenges](#coding-challenges)
+- [Next Steps](#next-steps)
+- [Contributions](#contributions)
 
 <hr style='border: 3px solid black'>
 
 ## Getting Started / Installation
+    1. Fork repo from GitHub
+    2. Clone into code editor
+    3. Install all necessary dependencies with:
+        ```
+        npm i
+        ````
+    4. To run the app in development mode:
+        ```
+        npm start
+        ````
 
 ## Wireframe
 ![Wireframe](./public/images/Wireframe.png)
@@ -23,34 +34,30 @@ I’m building an app, “Taste Test”, that produces a list of popular cocktai
 ## Site Preview
 
 ## Technologies Used
-<!-- * React
-* Express
-* Node.js
-* Javascript
-* Heroku
-* HTML
-* CSS
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). -->
+- React
+- React-Router
+- Javascript
+- HTML
+- CSS
 
 ## Coding Challenges
 The most challenging aspect of this project was learning how to access, parse, and render information from a third-party API.
 
 ## Next Steps
+- Implement search functionality
+- Implement single randomized rendering - "pop-quiz" style with timer
 
 ## Contributions
-Nia Salgado: Front-end and back-end development
+Front and back-end development: Nia Salgado
+Please feel free to message me on Slack for any questions, suggestions, bug id's, and/or contributions! @Nia Salgado
 
 ## Acknowledgments
-Referenced our React Todos Lab to review toggle hide/show functionality
-Referenced our Star Wars Lab to review react routers implementation
-Flex/grid styling tips: https://www.youtube.com/watch?v=phWxA89Dy94
-
-
-- - - 
-
+- Referenced class React Todos Lab to review toggle hide/show functionality
+- Referenced class Star Wars Lab to review react routers
+- Flex/grid styling tips: https://www.youtube.com/watch?v=phWxA89Dy94
+- Adobe SEI'23 Instructional Team 
 
 ## Available Scripts
-
 In the project directory, you can run:
 
 ### `npm start`
