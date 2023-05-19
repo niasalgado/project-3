@@ -22,21 +22,24 @@ useEffect(() => {
 }, []);
 
   return (
-      <div className='cocktails-list'>
-         <NavBar text={' '}/>
+      <div className='container'>
+        <NavBar text={' '}/>
         <h2>Cocktail List</h2>
-        
-        {cocktailList.map((cocktail) => {
-          let { idDrink, strDrink } = cocktail;
-          const id = {idDrink}
 
-          return (
-            <p> <Link to={`/cocktails/${idDrink}`} key={idDrink} id={id}>
-                  {strDrink}
-                </Link>
-            </p>
-          );
-        })}
+        <div className="cocktail-list-container">
+
+          {cocktailList.map((cocktail) => {
+            let { idDrink, strDrink } = cocktail;
+            const id = {idDrink}
+            
+            return (
+                <p><Link to={`/cocktails/${idDrink}`} key={id} id={id}>
+                      {strDrink}
+                    </Link>
+                </p>
+            )
+        })}</div>
+
       </div>
   )
 }
