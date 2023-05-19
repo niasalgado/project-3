@@ -3,15 +3,25 @@
 * {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    color: #5c5c5c;
+    background-color: #fffaed;
 }
 a {
     text-decoration: none;
+    transition: all 0.4s ease 0s;
+}
+a:hover {
+    color: #ff4d40;
 }
 h2 {
     font-weight: 600;
     font-size: 2em;
     padding-top: 15vh;
     text-align: center;
+    animation: init 2s 1;
+}
+@keyframes init {
+    50% {font-size: 2.3em;}
 }
 .container {
     display: flex;

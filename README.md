@@ -32,6 +32,9 @@ I’ve worked in the service industry for over 10 years, and I remember how diff
 ![Wireframe](./public/images/ComponentHierarchy.png)
 
 ## Site Preview
+![SitePreview](./public/images/HomePage.png)
+![SitePreview](./public/images/CocktailIndex.png)
+![SitePreview](./public/images/CocktailPage.png)
 
 ## Technologies Used
 - React
@@ -39,16 +42,18 @@ I’ve worked in the service industry for over 10 years, and I remember how diff
 - Javascript
 - HTML
 - CSS
+- Trello and InVision for project planning
 
 ## Coding Challenges
 The most challenging aspect of this project was learning how to access, parse, and render information from a third-party API.
 
 ## Next Steps
 - Implement search functionality
-- Implement single randomized rendering - "pop-quiz" style with timer
+- Implement User Login & OAuth
+- Implement single randomized rendering of single cocktail, "pop-quiz" style, with timer
 
 ## Contributions
-Front and back-end development: Nia Salgado
+Front and back-end development: Nia Salgado<br/>
 Please feel free to message me on Slack for any questions, suggestions, bug id's, and/or contributions! @Nia Salgado
 
 ## Acknowledgments

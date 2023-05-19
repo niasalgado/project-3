@@ -4,17 +4,16 @@ h1 {
     animation: init 2s 1;
 }
 @keyframes init {
-    50% {font-size: 3.5em;}
+    50% {font-size: 3.1em;}
 }
 #index-link {
-    color: green;
-    background-color: orange;
-    padding: 10px;
-    border-radius: 10px;
     text-decoration: none;
-}
-#index-link:hover {
-    color: white;
+    font-weight: 400;
+    padding: 9px 25px;
+    background-color: #c9d8d7;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
 }
 #home-container {
     display: flex;
