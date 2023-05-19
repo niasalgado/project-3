@@ -52,6 +52,7 @@ The most challenging aspect of this project was learning how to access, parse, a
 ## Next Steps
 - Implement search functionality
 - Implement User Login & OAuth
+- Allow users to add a new cocktail recipe
 - Implement single randomized rendering of single cocktail, "pop-quiz" style, with timer
 
 ## Contributions
